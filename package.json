@@ -1,0 +1,19 @@
+{
+  "name": "john",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run thumbs && vite build",
+    "preview": "vite preview",
+    "thumbs": "node scripts/generate-thumbnails.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "swiper": "^12.1.3"
+  }
+}
