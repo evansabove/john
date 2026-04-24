@@ -6,8 +6,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Paths relative to this script
-const photosDir = path.join(__dirname, '../photos');
+// Paths relative to project root (where npm run is executed)
+const photosDir = path.join(process.cwd(), 'photos');
 const thumbnailsDir = path.join(photosDir, 'thumbnails');
 
 console.log(`Starting thumbnail generation...\nLooking for photos in: ${photosDir}`);
